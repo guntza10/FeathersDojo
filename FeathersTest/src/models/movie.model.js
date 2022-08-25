@@ -36,7 +36,7 @@ module.exports = function (app) {
   movie.associate = function (models) {
     // Define associations here
     // See http://docs.sequelizejs.com/en/latest/docs/associations/
-    const { rentals, movie } = models;
+    const { rentals } = models;
     movie.belongsToMany(rentals, { through: "MovieRendtals" });
   };
 
