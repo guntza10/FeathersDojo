@@ -9,11 +9,8 @@
   "authentication": {
     "entity": "user",
     "service": "users",
-    "secret": "+64CKwvz3I4tnCCWT2CFbbmvnco=",
-    "authStrategies": [
-      "jwt",
-      "local"
-    ],
+    "secret": "oQclcuDstvXbO0iqdkD+i3gTri0=",
+    "authStrategies": ["jwt", "local"],
     "jwtOptions": {
       "header": {
         "typ": "access"
@@ -28,5 +25,5 @@
       "passwordField": "password"
     }
   },
-  "sqlite": "movieDB"
+  "sqlite": "sqlite://moviedb.sqlite"
 }
